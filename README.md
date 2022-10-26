@@ -2,10 +2,10 @@
 **Trabajo practico especial para la cursada de Programacion Orientada a Objetos de la carrera de Ingenieria en Sistemas UNICEN**
 
 Damian Betular desea informatizar el despacho de
-comidas del Palacio Duhau. En el palacio cada mesa
+comidas del Palacio Duhau. En el Despacho cada mesa
 ordena un pedido, el cual se encuentra formado por un
 conjunto de comidas, el número de mesa y el mozo que
-lo levantó. El palacio se caracteriza por la diversidad de
+lo levantó. El Despacho se caracteriza por la diversidad de
 preparaciones y comidas que se puede realizar. Una
 comida puede ir de algo tan simple como un tomate a
 algo tan complejo como lentejas rellenas con mousse de
