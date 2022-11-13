@@ -34,7 +34,7 @@ public class EstacionTrabajo {
     }
 
     public void removeComida(Comida c){
-        if(!comidas.contains(c))
+        if(comidas.contains(c))
             comidas.remove(c);
     }
 

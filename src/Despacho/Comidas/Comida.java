@@ -42,4 +42,13 @@ public abstract class Comida {
     public void setModoPreparacion(String modoPreparacion) {
         this.modoPreparacion = modoPreparacion;
     }
+
+    @Override
+    public String toString() {
+        return "\nComida{ " +
+                "\nnombre= '" + nombre + '\'' +
+                ", \ntipo= '" + tipo + '\'' +
+                ", \nmodoPreparacion= '" + modoPreparacion + '\''
+                ;
+    }
 }

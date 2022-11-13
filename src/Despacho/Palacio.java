@@ -37,6 +37,20 @@ public class Palacio {
         ((ComidaCompleja)cp2).addComida(c5);
         ((ComidaCompleja)cp2).addComida(c6);
         ((ComidaCompleja)cp2).addComida(c7);
+        System.out.println("\n-------------------Primera imp\n"+cp2);
+        ((ComidaCompleja)cp2).removeComida(c5);//saco tomate
+        System.out.println("\n-------------------Segunda imp\n"+cp2);
+        ((ComidaCompleja)cp2).addComida(cp1);//le meto fideos
+        System.out.println("\n-------------------Tercera imp\n"+cp2);
+        ((ComidaCompleja)cp2).removeComida(cp1);//le saco fideos
+        System.out.println("\n-------------------Cuarta imp\n"+cp2);
+
+        Comida cp3 = ((ComidaCompleja) cp2).cloneComidaCompleja();
+        //((ComidaCompleja)cp3).addComida(c2); Probe el equals
+        System.out.println("\n-------------------Quinta imp\n"+cp3);
+        System.out.println("&cp2 "+cp2.hashCode()+" &cp3 "+cp3.hashCode());
+        System.out.println("\n-------------------Equals?\n"+cp3.equals(cp2));
+
 
         //P1 ordena pizza, P2 ordena Fideos con tuco y P3 ordena Pizza y ensalada fresca.
         p1.addComida(c1);

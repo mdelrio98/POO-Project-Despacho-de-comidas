@@ -1,5 +1,7 @@
 package Despacho.Comidas;
 
+import java.util.Objects;
+
 public class ComidaSimple extends Comida{
     private double calorias;
     private double precio;
@@ -32,5 +34,23 @@ public class ComidaSimple extends Comida{
     @Override
     public int getTiempoPreparacion() {
         return this.tiempoPreparacion;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        ComidaSimple that = (ComidaSimple) o;
+        return Double.compare(that.calorias, calorias) == 0 && Double.compare(that.precio, precio) == 0 && tiempoPreparacion == that.tiempoPreparacion;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\ncalorias= " + calorias +
+                ", \nprecio= " + precio +
+                ", \ntiempoPreparacion= " + tiempoPreparacion +
+                "\n}";
     }
 }
